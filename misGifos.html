@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gif.Os</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/lightTheme.css">
+    <link rel="stylesheet" href="Styles/darkTheme.css">
+    <link rel="stylesheet" href="Styles/reset.css">
+</head>
+
+<body>
+    <header>
+        <div class="bar">
+            <h1 class="textoBar">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803 </h1>
+        </div>
+    </header>
+
+    <main>
+        <nav class="logoBotonBus">
+            <div class="logoBoton">
+                <a href="index.html"><img class="logo" src="assets/gifOF_logo.png" alt="logo"></a>
+                <div class="buttons">
+                    <form action="subirGif.html"><button id="buttonCreate" class="buttonPink pBlueRegular">Crear Guifos</button></form>
+                    <select id="changeTheme" class="buttonPink option pBlueRegular">
+                        <option>Elegir tema</option>
+                        <option value="day">Sailor Day</option>
+                        <option value="night">Sailor Night</option>
+                    </select>
+                </div>
+                <a id="myGif" class="linkMyGif" href="misGifos.html">
+                    <h2 class="pBlueRegular letter">Mis Gifos</h2>
+                </a>
+            </div>
+            <div>
+                <div id="findBox"></div>
+                <div id="findButton"><span id="loupe"></span><span id="findButtonText"></span></div>
+            </div>
+        </nav>
+        <section id="containerGridMyGif" class="containerGridMyGifOnly">
+            <div class="titleWhite">
+                <h2>Mis Guifos</h2>
+            </div>
+            <div id="gridIdMyGif" class="grid">
+                <div id="containerMyGif" class="videoContainer">
+                    <img id="videoMyGif" src="img" class="video" alt="gif propios">
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <script src="src/home.js"></script>
+    <script src="src/myGif.js"></script>
+
+    <script>
+        start();
+    </script>
+</body>
+
+</html>

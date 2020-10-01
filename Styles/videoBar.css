@@ -1,0 +1,108 @@
+#barVideo {
+    position: relative;
+    width: 240px;
+    height: 24px;
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0px 0px #cecece, inset 2px 2px 0px 0 #000;
+}
+
+#barVideo span {
+    display: block;
+    bottom: 2px;
+    width: 12px;
+    height: 20px;
+    background: #999999;
+    position: absolute;
+    animation: barVideo 1.5s ease-in-out infinite;
+    left: 2px;
+    visibility: hidden;
+}
+
+#barVideo span:nth-child(2) {
+    left: 16px;
+    animation-delay: .05s;
+}
+
+#barVideo span:nth-child(3) {
+    left: 30px;
+    animation-delay: .1s;
+}
+
+#barVideo span:nth-child(4) {
+    left: 44px;
+    animation-delay: .15s;
+}
+
+#barVideo span:nth-child(5) {
+    left: 58px;
+    animation-delay: .2s;
+}
+
+#barVideo span:nth-child(6) {
+    left: 72px;
+    animation-delay: .25s;
+}
+
+#barVideo span:nth-child(7) {
+    left: 86px;
+    animation-delay: .3s;
+}
+
+#barVideo span:nth-child(8) {
+    left: 100px;
+    animation-delay: .35s;
+}
+
+#barVideo span:nth-child(9) {
+    left: 114px;
+    animation-delay: .4s;
+}
+
+#barVideo span:nth-child(10) {
+    left: 128px;
+    animation-delay: .45s;
+}
+
+#barVideo span:nth-child(11) {
+    left: 142px;
+    animation-delay: .5s;
+}
+
+#barVideo span:nth-child(12) {
+    left: 156px;
+    animation-delay: .55s;
+}
+
+#barVideo span:nth-child(13) {
+    left: 170px;
+    animation-delay: .6s;
+}
+
+#barVideo span:nth-child(14) {
+    left: 184px;
+    animation-delay: .65s;
+}
+
+#barVideo span:nth-child(15) {
+    left: 198px;
+    animation-delay: .7s;
+}
+
+#barVideo span:nth-child(16) {
+    left: 212px;
+    animation-delay: .75s;
+}
+
+#barVideo span:nth-child(17) {
+    left: 226px;
+    animation-delay: .8s;
+}
+
+@keyframes barVideo {
+    0% {
+        background: #F7C9F3;
+    }
+    100% {
+        background: #999999;
+    }
+}

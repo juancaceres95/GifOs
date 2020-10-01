@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gif.Os</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&
+    display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/lightTheme.css">
+    <link rel="stylesheet" href="Styles/darkTheme.css">
+    <link rel="stylesheet" href="Styles/loadBar.css">
+    <link rel="stylesheet" href="Styles/videoBar.css">
+    <link rel="stylesheet" href="Styles/reset.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="bar">
+            <h1 class="textoBar">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.///// / Número de visitas: 12.765.803 </h1>
+        </div>
+    </header>
+
+    <main>
+
+        <nav class="logoBotonBus">
+            <div class="logoArrow">
+                <a href="index.html"><img class="arrow" src="assets/arrow.svg" alt="atras"></a>
+                <img class="logo" src="assets/gifOF_logo.png" alt="logo">
+            </div>
+
+            <div>
+                <div id="findBox"></div>
+                <div id="findButton"><span id="loupe"></span><span id="findButtonText"></span></div>
+            </div>
+        </nav>
+
+        <section id="gifRec">
+            <div class="bigButton">
+                <div class="bigTitle">
+                    <h2 class="pWhite">Crear Guifos</h2>
+                </div>
+                <div class="titleIn">
+                    <img class="imgWindows" src="assets/window img.png" alt="window">
+                    <h2 class="pBold">Aquí podrás crear tus propios guifos</h2>
+                </div>
+                <div class="list">
+
+                    <p>Crear tu <span class="pBold">guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+                    <p><span class="pBold">1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                    <p><span class="pBold">2)</span> Capturar tu momento guifo</p>
+                    <p><span class="pBold">3)</span> Revisar el momento</p>
+                    <p><span class="pBold">4)</span> Listo para subir y compartir!</p>
+                    <p>¿Quieres comenzar a crear tu <span class="pBold">guifo</span> ahora?</p>
+                </div>
+                <div class="twoButton">
+
+                    <form action="misGifos.html"><button id="cancelButton" class="cancelButton pBlueRegular">Cancelar</button></form>
+                    <button id="buttonBefore" class="startButton pBlueRegular">Comenzar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="captureVideo">
+            <div class="boxCapture">
+                <div class="titleCapture">
+                    <h2 id="titleChange" class="pWhite">Un Chequeo Antes de Empezar</h2>
+                    <img id="closeCapture" class="close" src="assets/button3.svg" alt="cierre">
+                </div>
+                <div class="borderVideo">
+                    <video id="videoBox" class="videoBox"></video>
+                </div>
+                <div class="allButtonCapture cronos">
+                    <button id="buttonCapture" class="buttonCapture">
+                        <span class="buttonCamera">
+                            <img class="camera" src="assets/camera.svg" alt="Captura">
+                        </span>
+                        <span class="pBlueRegular camera">Capturar</span>
+                    </button>
+                    <div id="cronoBox" class="cronoBox">
+                        <h2 id='crono'>00:00:00:00</h2>
+                    </div>
+                    <button id="buttonGo" class="buttonGo">
+                        <span class="buttonCamera go">
+                            <img src="assets/recording.svg" alt="Captura">
+                        </span>
+                        <span class="pBlueRegular go">Listo</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="previewVideo">
+            <div class="boxCapture">
+                <div class="titleCapture">
+                    <h2 class="pWhite">Vista Previa</h2>
+                    <img id="closePreview" class="close" src="assets/button3.svg" alt="cierre">
+                </div>
+                <div class="borderVideo">
+                    <video id="resultado" class="resultado" src="img"></video>
+                </div>
+                <div class="allButtonUpload">
+                    <div id="cronoBoxEnd" class="cronoBox">
+                        <p id='cronoEnd'>00:00:00:00</p>
+                    </div>
+                    <button id="play" class="play"><img src="assets/forward.svg" alt=""></button>
+                    <div id="barVideo">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span> <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <button id="buttonRepeat" class="buttonRepeat pBlueRegular">Repetir Captura</button>
+                    <button id="buttonUpload" class="buttonUpload pBlueRegular">Subir Guifo</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="uploadVideo">
+            <div class="boxCapture">
+                <div class="titleCapture">
+                    <h2 class="pWhite">Subiendo Guifo</h2>
+                    <img id="closeUpload" class="close" src="assets/button3.svg" alt="cierre">
+                </div>
+                <div class="borderVideo Upload">
+                    <img class="world" src="assets/globe_img.png" alt="">
+                    <div class="uploadText">
+                        <h2 class="pBlueBold">Estamos subiendo tu guifo…</h2>
+                    </div>
+                    <div id="barLoader">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span> <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="timeText">
+                        <h2 class="pGreiRegular">Tiempo restante: <span class="labeled">años</span> algunos minutos</h2>
+                    </div>
+                </div>
+                <div class="allButtonCapture">
+                    <form action="misGifos.html"><button class="buttonRepeat pBlueRegular">Cancelar</button></form>
+                </div>
+            </div>
+        </section>
+
+        <section id="optionVideo">
+            <div class="boxCapture option">
+                <div class="titleCapture option">
+                    <h2 class="pWhite">Guifo Subido Con Éxito</h2>
+                    <img id="closeOption" class="close" src="assets/button3.svg" alt="cierre">
+                </div>
+                <div class="BoxResultadoBotones">
+                    <div class="borderVideo option">
+                        <img id="resultados" class="resultado" src="img" alt="gif terminado">
+                    </div>
+                    <div class="allbuttonRight">
+                        <h2 class="pBlueBold">Guifo Subido Con Éxito</h2>
+                        <button id="saveUrl" class="buttonRepeat option pBlueRegular">Copiar Enlace Guifo</button>
+                        <button id="saveGif" class="buttonRepeat option pBlueRegular">Descargar Guifo</button>
+                    </div>
+                </div>
+                <div class="allButtonCapture option">
+                    <button id="buttonListo" class="buttonRepeat pBlueRegular">Listo</button>
+                </div>
+            </div>
+            <section id="containerGridMyGif">
+                <div class="titleWhite">
+                    <h2>Mis Guifos</h2>
+                </div>
+                <div id="gridIdMyGif" class="grid">
+                    <div id="containerMyGif" class="videoContainer">
+                        <img id="videoMyGif" src="img" class="video" alt="mis gif">
+                    </div>
+                </div>
+            </section>
+    </main>
+
+
+
+
+
+    <script src="src/home.js"></script>
+    <script src="src/myGif.js"></script>
+    <script src="src/upLoad.js"></script>
+    <script src="src/temp.js"></script>
+    <script src="src/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
+</body>
+
+</html>

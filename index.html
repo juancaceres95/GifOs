@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gif.Os</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/lightTheme.css">
+    <link rel="stylesheet" href="Styles/darkTheme.css">
+    <link rel="stylesheet" href="Styles/reset.css">
+</head>
+
+
+
+<body>
+
+    <header>
+        <div class="bar">
+            <h1 class="textoBar">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803 </h1>
+        </div>
+    </header>
+    <main>
+        <nav class="logoBotonBus">
+
+
+            <div class="logoBoton">
+
+                <img class="logo" src="assets/gifOF_logo.png" alt="logo azul">
+                <div class="buttons">
+
+                    <form action="subirGif.html"><button id="buttonCreate" class="buttonPink pBlueRegular">Crear Guifos</button></form>
+
+                    <div class="boxSelect">
+
+                        <select id="changeTheme" class="buttonPink option pBlueRegular"><!-- ==-->
+                            <option>Elegir tema</option>
+                            <option value="day">Sailor Day</option>
+                            <option value="night">Sailor Night</option>
+                        </select>
+                    </div>
+                    <a id="myGif" class="linkMyGif" href="misGifos.html">
+                        <h2 class="pBlueRegular letter">Mis Gifos</h2>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="search">
+
+            <div class="findBar">
+                <h2 class="pWhite">Buscar</h2>
+            </div>
+            <div class="outBox">
+                <input id="findBox" class="findBox" onkeyup="actBtn()" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" type="text">
+                <button id="findButton" disabled="true" class="findButton"><img id="loupe" class="loupe" src="assets/lupa_inactive.svg" alt="buscar"><span id="findButtonText" class="pBlueRegularbutton">Buscar</span></button>
+            </div>
+        </div>
+        <div class="contRelatedBtn" id="rltBtn">
+            <button class="relatedBtn" id="relatedBtn">#Perros</button>
+            <button class="relatedBtn" id="relatedBtn2">#Argentina</button>
+            <button class="relatedBtn" id="relatedBtn3">#Friends</button>
+        </div>
+        <!-- SEARCH RELATED TAGs BUTTONS #BLUE -->
+
+        <div class="relatedTags" id="relatedTags">
+            <!-- <button class="searchRtag verMas" onclick="loadTags()" id="tag1"></button>
+            <button class="searchRtag verMas" onclick="loadTags()" id="tag2"></button>
+            <button class="searchRtag verMas" onclick="loadTags()" id="tag3"></button> -->
+
+        </div>
+
+
+        <section id="randomGif">
+
+            <div class="titleWhite">
+                <h2> Hoy te sugerimos:</h2>
+            </div>
+            <div id="gridId" class="grid">
+                <div id="containerRandom" class="videoCointanerRandom">
+                    <div class="videoHastRandom">
+                        <p id="hast" class="pWhite"></p>
+                        <img class="close" src="assets/button3.svg" alt="cerrar">
+                    </div>
+                    <img id="video" src="img" class="videoRandom" alt="gif al azar">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="containerGrid">
+            <div id="titleWhite" class="titleWhite">
+                <h2>Tendencias:</h2>
+            </div>
+            <div id="gridIdTrend" class="grid">
+                <div id="container" class="videoContainer">
+                    <img id="video0" src="img" class="video" alt="gifs de tendecias">
+                    <div class="videoHast">
+                        <p id="hast0" class="pWhiteEfect"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="src/random.js"></script>
+    <script src="src/trending.js"></script>
+    <script src="src/find.js"></script>
+    <script src="src/home.js"></script>
+    <script>
+        start();
+    </script>
+
+
+</body>
+
+</html>
